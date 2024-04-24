@@ -22,3 +22,17 @@ function showSignIn() {
 function submitSignIn() {
   document.querySelector("popup-passed").style.display = "none";
 }
+
+// ẩn hiện menu trang admin
+function hidden_menu() {
+  var menu = document.getElementById("menu");
+  var content = document.getElementById("content");
+  content.classList.toggle("hidden");
+  menu.classList.toggle("hidden");
+}
+// .content {
+//   width: 81%;
+//   height: calc(100vh - 20px);
+//   margin-left: calc(19% + 20px);
+//   border-radius: 10px;
+// }

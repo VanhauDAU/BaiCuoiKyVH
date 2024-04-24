@@ -61,6 +61,7 @@
 .body.content-cart {
   margin-top: 100px;
   height: 100vh;
+  margin-bottom: 170px;
 }
 .table-heading {
   display: flex;
@@ -143,7 +144,7 @@
   margin-right: 10px;
   display: block;
 }
-.table-product button {
+.table-product a {
   background-color: var(--primary-color);
   color: white;
   border: none;
@@ -151,8 +152,43 @@
   border-radius: 999px;
   cursor: pointer;
 }
-.table-product button:hover {
+.table-product a:hover {
   opacity: 0.8;
+}
+/* shopping-cart (thông tin nhận hàng) */
+.main-contentt.cart {
+  display: flex;
+}
+.info_address {
+  margin: 100px 10px 0 0;
+}
+.info_address h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #0093e9;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.form-info-address {
+  padding: 10px 10px;
+  background-color: #7dd3fc;
+  border-radius: 10px;
+}
+.thongtinnhanhang tr > td {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.thongtinnhanhang tr td {
+  padding: 10px 5px;
+}
+.thongtinnhanhang tr td input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 6px 10px;
+  box-shadow: 0 2px 2px #ccc;
 }
 /* footer */
 footer {
@@ -168,9 +204,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-/* footer */
-.body.footer-cart {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -189,7 +222,7 @@ footer {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background: #fda4af;
+  background: #7dd3fc;
 }
 .body.footer-cart li button {
   border: none;
@@ -200,10 +233,17 @@ footer {
 .body.footer-cart li button:hover {
   color: red;
 }
+.body.footer-cart li a {
+  color: black;
+  font-size: 1.8rem;
+}
+.body.footer-cart li a:hover {
+  color: red;
+}
 .body.footer-cart .btn-buy button {
   padding: 15px 100px;
   border: none;
-  background-color: #fda4af;
+  background-color: #7dd3fc;
   border-radius: 10px;
   font-size: 2rem;
   text-transform: uppercase;
